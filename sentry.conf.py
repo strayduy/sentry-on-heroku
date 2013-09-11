@@ -101,6 +101,9 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 # requests to HTTPS
 SECURE_SSL_REDIRECT = True
 
+# List of hostnames that Django is allowed to serve
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
+
 
 # Bcrypt
 # ------
