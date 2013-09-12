@@ -44,6 +44,10 @@ Follow the steps below to get Sentry up and running on Heroku:
 
         heroku run "sentry --config=sentry.conf.py createsuperuser"
 
+8. Set ALLOWED_HOSTS to your application's hostname::
+
+        heroku config:add ALLOWED_HOSTS=APP_NAME.herokuapp.com
+
 That's it!
 
 
